@@ -1,0 +1,139 @@
+@font-face {
+  
+  src: url("/BebasNeue-Regular.a4830992.ttf");
+  font-family: "bebas"; 
+ }
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  color: white;
+}
+body {
+  background: url("/background.6e2502f4.png") no-repeat center center fixed; /* Mise ne place du background*/
+  background-size: cover;
+  
+}
+header {
+  width: 100%; /*Gestion de la taille du header*/
+  height: 5vw;
+}
+#inner_header ul {
+  /*Position des liens dans le header pour que cela soit aligné plus une bordure blanche */
+  display: flex;
+  list-style-type: none;
+  width: 33.84vw;
+  height: 5vw;
+
+  border-bottom: solid 1px white;
+}
+#inner_header li {
+  /* Gestion des liens , taille position font etc...*/
+
+  margin-right: 1.5vw;
+  margin-top: 1.8vw;
+  margin-left: 2.5vw;
+  height: 2vw;
+  font-size: 1.6vw;
+  font-family: "bebas";
+  border-bottom: solid 3px transparent;
+  transform: scale(1.3, 1.1);
+}
+#inner_header li:hover {
+  /* Permet de metre un underligne sur les mots en sur-volant*/
+  transition: all 0.4s ease-in-out 0s;
+
+  border-bottom: solid 3px #ffb900;
+}
+span {
+  color: #ffb900;
+}
+
+#Content {
+  height: 40vh;
+  position: relative;
+  top: 5vw;
+
+  text-align: center;
+  font-size: 3.1vw;
+  font-family: "bebas";
+  color: #eab61a;
+}
+#btn_suite {
+  margin-top: 2vw;
+  font-size: 1.5vw;
+  display: inline-block;
+  transform: scale(1.5, 1.2);
+  padding: 0.58vw 2.65vw 0.58vw 2.65vw;
+  border: solid 0.05vw;
+  color: #eab61a;
+}
+#btn_suite:hover {
+  transition: all 0.8s ease-in-out 0s;
+  color: white;
+}
+#ligne {
+  width: 0.02vw;
+  margin: auto;
+  margin-top: 2vw;
+  height: 100%;
+  border-color: #ffb900;
+  background-color: #ffb900;
+}
+
+
+#footerdiv{
+  background-color: red;
+  height: 10vh;
+}
+
+
+
+/* Le Loader */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #1F1F1F;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #f5cf09;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
+
+
+
+/*# sourceMappingURL=/main.af46ece4.css.map */

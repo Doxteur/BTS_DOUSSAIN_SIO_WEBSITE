@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/story.0b1dcead.css">
+
+<script src="/story.0b1dcead.js"></script></head>
+
+<body>
+    <header>
+        <div class="inner_header">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/index.html">Menu</a>
+                    </li>
+                    <li>
+                        <a href="/Story.html"><span>Histoire</span></a>
+                    </li>
+                    <li>
+                        <a href="/personnage.html">Acteur</a>
+                    </li>
+                    <li>
+                        <a href="#">Episodes</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!--Création de la partie principal-->
+
+
+    <section id="mainPage">
+
+        <h1>L'histoire</h1>
+    </section>
+    <section id="transitionPage">
+
+        <h1>Walter White</h1>
+    </section>
+    <section id="secondPage">
+        <div id="secondPagecontent">
+            <img src="/walterNormal.71171df6.png" alt="walterNormal">
+            <div id="titreEtTextPage2">
+                <h1>Qui est ?<br>
+                    <span>W</span>alter <span>W</span>hite
+                </h1>
+                <p>Walter Hartwell White est le protagoniste principal de Breaking Bad. C'est un professeur de
+                    physique-chimie Walter White a étudié à l'université California Institute of Technology avec Elliott
+                    Schwartz dans le domaine de la cristallographie. Il a recu un prix nobel de chimie. Il est donc surqualifié pour son job de professeur. Il menait une vie exemplaire. Et puis une triste
+                    nouvelle arriva ...
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <section id="transitionPage">
+
+        <h1>Le Cancer</h1>
+    </section>
+
+    <section id="thirdPage">
+        <div>
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+
+                        <h2>SAISON 1</h2>
+
+                        <p>Prise de conscience du cancer walter et sa famille ne peuvent pas se permettre de payer le
+                            traitement</p>
+                        <img src="/saison1.f17205f5.png" alt="">
+
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>SAISON 2</h2>
+                        <p>Walter devient un créateur de métamphétamine et sombre dans le trafic.</p>
+                        <img src="/saison2.4dbda9d8.png" alt="">
+
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>SAISON 2</h2>
+                        <p>Walter est devenu très doué et arrive a générer de très gros revenue.</p>
+                        <img src="/saison2.1.2439ee8f.png" alt="">
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>SAISON 3</h2>
+                        <p>Walter travail pour des gangs, mais son ego le pousse a voir plus grand. Il entame ca
+                            transformation vers un homme bien plus dangereux.</p>
+                        <img src="/saison3.33d236ad.png" alt="">
+
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h2>SAISON 4</h2>
+                        <p>Walter est devenu sont propre chef il n'obéit a personne. Il se fait un nom dans le business
+                            de la
+                            vente de drogue en tuant Guss Freeks</p>
+                        <img src="/saison4.96f2df8d.png" alt="">
+
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h2>SAISON 5</h2>
+                        <p>Walter est démasqué et perd tout, sa femme, son fils,son coéquipier sa maison, son empire.
+                        </p>
+                        <img src="/saison5.bc424120.png" alt="">
+
+                    </div>
+                </div>
+            </div>
+
+            <section id="transitionPage">
+                <h1>Drogue</h1>
+            </section>
+            
+            <section id="fourthPage">
+                <img src="/walterTransforme.e7824f8e.png" alt="walterNormal">
+            <div id="titreEtTextPage2_1">
+                <h1>
+                    <span>H</span>eisen<span>B</span>erg
+                </h1>
+                <p>HeisenBerg est un pilier dans le milieu de la drogue. C'est un fabricant de méthamphétamine, il a accumulé une fortune de 80 Million de dollars. Il a mis fin au plus grand business de la série et a établi le sien a la place.
+                </p>
+            </div>
+                </section>
+                <section id="transitionPage">
+                    <a href="/personnage.html"><h2>Personnage</h2></a>
+                </section>
+        </div>
+        
+
+    </section>
+
+
+    <!-- Change la couleur du header quand on scroll -->
+    <script>$(window).scroll(function () {
+  var scroll = $(window).scrollTop();
+
+  if (scroll >= 800) {
+    $('a').addClass('white');
+    $("header").addClass("black");
+    $(".inner_header").addClass("yellow");
+  } else if (scroll <= 800) {
+    $("header").removeClass("black");
+    $(".inner_header").removeClass("yellow");
+    $('a').removeClass('white');
+  }
+});</script>
+    <!-- Loader (Intégration) -->
+
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+
+    </div>
+
+    <script>$(window).on("load", function () {
+  $(".loader-wrapper").fadeOut("slow");
+});</script>
+
+
+
+</body>
+
+</html>

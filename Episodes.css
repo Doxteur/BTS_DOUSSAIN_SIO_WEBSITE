@@ -1,0 +1,187 @@
+@font-face {
+  src: url("Font/BebasNeue-Regular.ttf");
+  font-family: "bebas";
+}
+
+/* Enlever la marge et le padding  */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+/* Set du fond d'écran */
+body {
+  background-color: #1f1f1f;
+  background-image: url("Images/Page4/arrière-plan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*Taille du header et des liens */
+header {
+  width: 100%; /*Gestion de la taille du header*/
+  height: 5vw;
+  background-color: #1f1f1f;
+  border-bottom: solid 1px white;
+  position: fixed;
+  z-index: 150;
+}
+#inner_header {
+  background-color: #ffb900;
+  width: 38vw;
+  transform: skew(40deg);
+  margin-left: -2.1vw;
+}
+#inner_header ul {
+  /*Position des liens dans le header pour que cela soit aligné plus une bordure blanche */
+  display: flex;
+  list-style-type: none;
+  width: 33.84vw;
+  height: 5vw;
+  margin-left: 2vw;
+  transform: skew(-40deg);
+}
+#inner_header li {
+  /* Gestion des liens , taille position font etc...*/
+
+  margin-right: 1.5vw;
+  margin-top: 1.8vw;
+  margin-left: 2.5vw;
+  height: 2vw;
+  font-size: 1.6vw;
+  font-family: "bebas";
+  border-bottom: solid 3px transparent;
+  transform: scale(1.3, 1.1);
+}
+#inner_header a {
+  color: black;
+}
+#inner_header li:hover {
+  /* Permet de metre un underligne sur les mots en sur-volant*/
+  transition: all 0.4s ease-in-out 0s;
+
+  border-bottom: solid 3px black;
+}
+#inner_header span {
+  color: white;
+  border-bottom: solid 3px black;
+}
+
+/* Fin Header */
+
+section{
+    height: 100vh;
+    width: 100%;
+}
+
+
+#owl-carousel-video {
+  width: 100%;
+  padding-top: 30px;
+}
+
+.item-video {
+    text-align: center;
+    height: 515px;
+
+    background-color: #ffb900;
+    display: block;
+ 
+}
+#thirdPage{
+  background-color: #1f1f1f;
+}
+
+
+
+table,
+td {
+    border: 1px solid #333;
+}
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+
+/* Le Loader */
+.loader_text{
+  position: absolute;
+  padding-top: 150px;
+  font-family: Helvetica, sans-serif;
+}
+
+.loader-wrapper  {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(31, 31, 31, 1); 
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1024;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #f5cf09;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+.loader_text{
+  color: white;
+  
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
+}
