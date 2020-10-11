@@ -9,20 +9,18 @@
   list-style: none;
   text-decoration: none;
   box-sizing: border-box;
-
 }
 html,
 body {
   width: 100%;
   min-height: 100%;
-  overflow-x: hidden ;
-
+  overflow-x: hidden;
 }
 
 /* Set du fond d'écran */
 
 section {
-  height: 100vh;
+  height: 1000px;
   width: 100%;
 }
 
@@ -36,7 +34,6 @@ header {
   z-index: 5;
   border-bottom: solid 1px white;
   transition: all 0.4s ease-in-out 0s;
-
 }
 
 .inner_header {
@@ -80,7 +77,6 @@ a {
   border-bottom: solid 3px black;
 }
 .inner_header span {
-  
   border-bottom: solid 2px black;
 }
 
@@ -89,16 +85,15 @@ a {
 }
 .black {
   background-color: #1f1f1f;
-  
 }
-.blacktext{
+.blacktext {
   color: black;
 }
-.yellow{
+.yellow {
   background-color: #eab61a;
 }
 
-#mainPage  {
+#mainPage {
   background-image: url("Images/Page2/background1.png");
   background-position: 0vw -5vw;
   background-repeat: no-repeat;
@@ -125,34 +120,59 @@ a {
 
 #secondPagecontent {
   display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  top: 25%;
+
 }
 #secondPagecontent img {
-  margin-top: 15vw;
-  margin-left: 10vw;
-  width: 31.25vw;
-  height: 20.8vw;
+  width: 600px;
+  height: 399.36px;
 }
-#titreEtTextPage2 {
-  margin-top: 13vw;
-  margin-left: 8vw;
-}
+
 #titreEtTextPage2 span {
   color: #eab61a;
 }
 
 #secondPagecontent h1 {
-  font-size: 5vw;
+  font-size: 90px;
   font-family: "Helvetica";
   text-align: center;
 }
 #secondPagecontent p {
-  width: 30vw;
-  font-size: 1.2vw;
+  max-width: 800px;
+  font-size: 25px;
   font-family: "Helvetica";
   text-align: center;
+  margin: auto;
 }
-#fourthPage{
+
+@media screen and (max-width: 1024px) {
+  #secondPagecontent {
+    display: inherit;
+  
+  }
+  #secondPagecontent h1 {
+    font-size: 50px;
+
+  }
+  #secondPagecontent img {
+   margin: auto;
+   width: 400px;
+   height: 300px;
+  }
+  #secondPagecontent p {
+    width: auto;
+    font-size: 20px;
+   }
+   
+}
+
+#fourthPage {
   display: flex;
+  justify-content: space-evenly;
+
+  padding-top: 30vh;
 }
 #fourthPage h1 {
   font-size: 5vw;
@@ -160,53 +180,46 @@ a {
   text-align: center;
   color: white;
 }
-#fourthPage p{
+#fourthPage p {
   width: 30vw;
   color: white;
   font-size: 1.5vw;
-  padding-top: 1vw;
+
   font-family: "Helvetica";
   text-align: center;
 }
-#fourthPage img{
-  margin-top: 18vw;
-  margin-left: 10vw;
+#fourthPage img {
   width: 31.25vw;
   height: 20.8vw;
 }
 #fourthPage span {
   color: #eab61a;
 }
-#titreEtTextPage2_1{
-  margin-top: 20vw;
-  margin-left: 8vw;
-}
-#thirdPage{
+
+#thirdPage {
   background-color: #1f1f1f;
   height: 100%;
-  
 }
 
-#ligneMillieu{
- margin: auto;
- 
- border: none;
- height: 100vw;
- width: 0.5vw;
- background-color: #eab61a;
+#ligneMillieu {
+  margin: auto;
+
+  border: none;
+  height: 100vw;
+  width: 0.5vw;
+  background-color: #eab61a;
 }
-.transitionPage a{
+.transitionPage a {
   color: black;
   display: table-cell;
   font-size: 6vw;
   padding-top: 2vw;
   text-align: center;
   font-family: "bebas";
-  transform: scale(1.2,1);
-
+  transform: scale(1.2, 1);
 }
-.transitionPage a:hover{
-  transform: scale(1.1,1.1);
+.transitionPage a:hover {
+  transform: scale(1.1, 1.1);
 }
 /* Timeline */
 
@@ -215,15 +228,14 @@ a {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: 'Helvetica';
+  font-family: "Helvetica";
   padding-top: 2vw;
   padding-bottom: 2vw;
- 
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: #eab61a;
@@ -239,21 +251,19 @@ a {
   position: relative;
   background-color: inherit;
   width: 50%;
-  
 }
-.container img{
+.container img {
   width: 250px;
   height: 200px;
   border: solid 8px #1f1f1f;
 }
-.container p{
+.container p {
   font-size: 30px;
   font-weight: bold;
-  
 }
 /* The circles on the timeline */
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -311,27 +321,26 @@ a {
 /* The actual content */
 .content {
   padding: 20px 30px;
-  background-color:#eab61a;
+  background-color: #eab61a;
   position: relative;
   border-radius: 6px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
 @media screen and (max-width: 600px) {
-/* Place the timelime to the left */
+  /* Place the timelime to the left */
   .timeline::after {
     left: 31px;
   }
 
-/* Full-width containers */
+  /* Full-width containers */
   .container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
-    
   }
 
-/* Make sure that all arrows are pointing leftwards */
+  /* Make sure that all arrows are pointing leftwards */
   .container::before {
     left: 60px;
     border: medium solid white;
@@ -339,20 +348,17 @@ a {
     border-color: transparent white transparent transparent;
   }
 
-/* Make sure all circles are at the same spot */
-  .left::after, .right::after {
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
     left: 15px;
   }
 
-/* Make all right containers behave like the left ones */
+  /* Make all right containers behave like the left ones */
   .right {
     left: 0%;
   }
 }
-
-
-
-
 
 /* Le Loader */
 .loader-wrapper {
@@ -363,8 +369,8 @@ a {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(31, 31, 31, 1); 
-   display: flex;
+  background-color: rgba(31, 31, 31, 1);
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1024;
