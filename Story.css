@@ -168,34 +168,53 @@ a {
    
 }
 
-#fourthPage {
+#fourthPageContent {
   display: flex;
   justify-content: space-evenly;
-
-  padding-top: 30vh;
+  position: relative;
+  top: 25%;
 }
-#fourthPage h1 {
-  font-size: 5vw;
+#fourthPageContent h1 {
+  font-size: 90px;
   font-family: "Helvetica";
   text-align: center;
   color: white;
 }
-#fourthPage p {
-  width: 30vw;
+#fourthPageContent p {
+ 
   color: white;
-  font-size: 1.5vw;
-
+  max-width: 600px;
+  font-size: 25px;
   font-family: "Helvetica";
   text-align: center;
+  margin: auto;
 }
-#fourthPage img {
-  width: 31.25vw;
-  height: 20.8vw;
+#fourthPageContent img {
+  width: 600px;
+  height: 400px;
 }
-#fourthPage span {
+#fourthPageContent span {
   color: #eab61a;
 }
-
+@media screen and (max-width: 1024px) {
+  #fourthPageContent {
+    display: inherit;
+  
+  }
+  #fourthPageContent h1 {
+    font-size: 50px;
+  }
+  #fourthPageContent img {
+   margin: auto;
+   width: 400px;
+   height: 300px;
+  }
+  #fourthPageContent p {
+    width: auto;
+    font-size: 20px;
+   }
+   
+}
 #thirdPage {
   background-color: #1f1f1f;
   height: 100%;
