@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Episodes</title>
     <link rel="stylesheet" href="Episodes.css">
-   
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.css">	
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>  	
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
-    
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.theme.default.css">
+        
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/assets/owl.carousel.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.0/owl.carousel.min.js"></script>
+
 </head>
+
 <body>
-    <script src="Intégration/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script src="Intégration/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+   
     <header>
         <div id="inner_header">
             <nav>
@@ -36,61 +41,134 @@
         </div>
     </header>
     <section id="mainPage">
-       
-      
+
+
     </section>
     <section id="secondPage">
 
-        <!-- Intégration owl video -->
+        <!-- Intégration owl video pour permettre un slider de vidéo car celui pour image simple ne me corespondais pas -->
         <div id="owl-carousel-video" class="owl-carousel owl-theme owl-center owl-loaded">
-            <div class="item-video" data-merge="3"><iframe width="860" height="515" src="https://www.youtube.com/embed/VotBYq50Prc" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="item-video" data-merge="1"><iframe width="860" height="515" src="https://www.youtube.com/embed/4l0PUYQ5dIE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="item-video" data-merge="2"><iframe width="860" height="515" src="https://www.youtube.com/embed/kIs84Bh1hFk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="item-video" data-merge="1"><iframe width="860" height="515" src="https://www.youtube.com/embed/Xwb10TqyvKA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="item-video" data-merge="2"><iframe width="860" height="515" src="https://www.youtube.com/embed/zG79lO_13Xk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="item-video" data-merge="3"><iframe width="860" height="515" src="https://www.youtube.com/embed/lQDKFdo9tpI" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-            <div class="item-video" data-merge="1"><iframe width="860" height="515" src="https://www.youtube.com/embed/tJpfokxtr7c" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <!-- Je sais que frameborder n'est plus utilisé mais il marche donc je l'utilise -->
+            <div class="item-video" data-merge="3"><iframe width="860" height="515"
+                    src="https://www.youtube.com/embed/VotBYq50Prc" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item-video" data-merge="1"><iframe width="860" height="515"
+                    src="https://www.youtube.com/embed/4l0PUYQ5dIE" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item-video" data-merge="2"><iframe width="860" height="515"
+                    src="https://www.youtube.com/embed/kIs84Bh1hFk" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item-video" data-merge="1"><iframe width="860" height="515"
+                    src="https://www.youtube.com/embed/Xwb10TqyvKA" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item-video" data-merge="2"><iframe width="860" height="515"
+                    src="https://www.youtube.com/embed/zG79lO_13Xk" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item-video" data-merge="3"><iframe width="860" height="515"
+                    src="https://www.youtube.com/embed/lQDKFdo9tpI" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="item-video" data-merge="1"><iframe width="860" height="515"
+                    src="https://www.youtube.com/embed/tJpfokxtr7c" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
         </div>
-          <script>
-            $(document).ready(function($) {
+        <!--Activation du slider  quand la page s'ouvre -->
+        <script>
+            $(document).ready(function ($) {
                 $('#owl-carousel-video').owlCarousel({
-                items:1,
-                merge:true,
-                loop:true,
-                
-                video:true,
-                lazyLoad:true,
-                center:true,
-                responsive:{
-                    480:{
-                        items:2
-                    },
-                    600:{
-                        items:2
-                    }
-                }
-              });
+                    items: 1,
+                    loop: true,
+                    video: true,
+                    center: true,
+
+                });
             });
-          </script>
-           <!-- Fin Intégration-->
+        </script>
     </section>
+    <!-- Fin Intégration-->
+
     <section id="thirdPage">
-        <h1>La liste : </h1>
-        <table>
+        <!-- Permet la transition background parallax -->
+    </section>
+    <section id="fourthPage">
+        <div id="wiki">
+            <a href="https://breakingbad.fandom.com/fr/wiki/Wiki_Breaking_bad">
+            <img src="Images/Page4/breaking_bad_sirota.jpg" alt="">
+            <h1>More</h1>
+        </a>
+        </div>
+        <!-- Tableau des épisodes-->
+
+        <table class="styled-table">
             <thead>
                 <tr>
-                    <th colspan="2">Les épisodes</th>
+                    <th>Saison : Episodes</th>
+                    <th>Nom Episode</th>
+                    <th>durée</th>
+
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>The table body</td>
-                    <td>with two columns</td>
+                    <td>1 : 1</td>
+                    <td>Chute libre</td>
+                    <td>58:20</td>
                 </tr>
+                <tr class="active-row">
+                    <td>1 : 2</td>
+                    <td>Le choix</td>
+                    <td>48:22</td>
+                </tr>
+                <tr>
+                    <td>1 : 3</td>
+                    <td>Dérapage</td>
+                    <td>48:20</td>
+                </tr>
+                <tr class="active-row">
+                    <td>1 : 4</td>
+                    <td>Retour au sources</td>
+                    <td>48:18</td>
+                </tr>
+                <tr>
+                    <td>1 : 5</td>
+                    <td>Vivre ou Survivre</td>
+                    <td>48:04</td>
+                </tr>
+                <tr class="active-row">
+                    <td>1 : 6</td>
+                    <td>Bluff</td>
+                    <td>48:11</td>
+                </tr>
+                <tr>
+                    <td>1 : 7</td>
+                    <td>Le fruit defendu</td>
+                    <td>47:51</td>
+                </tr>
+             
+                <!-- and so on... -->
             </tbody>
         </table>
+
+        
+
     </section>
-     <!-- Loader -->
+
+    <!-- Le footer  -->
+    <footer>
+        <div id="footerdiv">
+            <h1>© Site réalisé par Jimmy Doussain | 2020</h1>
+        </div>  
+    </footer>
+
+
+
+    <!-- Loader --> 
      <div class="loader-wrapper">
          <span class="loader"><span class="loader-inner"></span></span>
        
@@ -105,5 +183,7 @@
             $(".loader-wrapper").fadeOut("slow");
         });
     </script>
+   
 </body>
+
 </html>

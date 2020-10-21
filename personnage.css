@@ -15,10 +15,10 @@
 body {
   background-color: #1f1f1f;
 
-  background-size: cover;
-  background-size: 300vh;
 }
-
+#content{
+  height: 650px;
+}
 /*Taille du header et des liens */
 header {
   width: 100%; /*Gestion de la taille du header*/

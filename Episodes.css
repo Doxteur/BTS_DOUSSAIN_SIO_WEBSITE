@@ -11,31 +11,38 @@
   list-style: none;
   text-decoration: none;
 }
+a{
+  color:#ffb900;
+}
 /* Set du fond d'écran */
+
 body {
-  background-color: #1f1f1f;
   background-image: url("Images/Page4/arrière-plan.png");
-  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
 /*Taille du header et des liens */
+
 header {
-  width: 100%; /*Gestion de la taille du header*/
+  width: 100%;
+  /*Gestion de la taille du header*/
   height: 5vw;
   background-color: #1f1f1f;
   border-bottom: solid 1px white;
   position: fixed;
   z-index: 150;
 }
+
 #inner_header {
   background-color: #ffb900;
   width: 38vw;
   transform: skew(40deg);
   margin-left: -2.1vw;
 }
+
 #inner_header ul {
   /*Position des liens dans le header pour que cela soit aligné plus une bordure blanche */
   display: flex;
@@ -45,9 +52,9 @@ header {
   margin-left: 2vw;
   transform: skew(-40deg);
 }
+
 #inner_header li {
   /* Gestion des liens , taille position font etc...*/
-
   margin-right: 1.5vw;
   margin-top: 1.8vw;
   margin-left: 2.5vw;
@@ -57,15 +64,17 @@ header {
   border-bottom: solid 3px transparent;
   transform: scale(1.3, 1.1);
 }
+
 #inner_header a {
   color: black;
 }
+
 #inner_header li:hover {
   /* Permet de metre un underligne sur les mots en sur-volant*/
   transition: all 0.4s ease-in-out 0s;
-
   border-bottom: solid 3px black;
 }
+
 #inner_header span {
   color: white;
   border-bottom: solid 3px black;
@@ -73,11 +82,15 @@ header {
 
 /* Fin Header */
 
-section{
-    height: 100vh;
-    width: 100%;
+section {
+  height: 100vh;
+  width: 100%;
 }
 
+#secondPage {
+  height: 580px;
+  background-color: black;
+}
 
 #owl-carousel-video {
   width: 100%;
@@ -85,39 +98,105 @@ section{
 }
 
 .item-video {
-    text-align: center;
-    height: 515px;
-
-    background-color: #ffb900;
-    display: block;
- 
+  text-align: center;
+  height: 515px;
+  background-color: #ffb900;
+  display: block;
 }
-#thirdPage{
+
+#thirdPage {
+  background-image: url("Images/Page4/episodesbackground.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#fourthPage {
+  background-color: #dddddd;
+  margin-top: -25px;
+  border-top: #1f1f1f 5px solid;
+  min-height: 1000px;
+}
+
+.owl-dots {
+  background-color: black;
+}
+
+/* Tableau */
+
+.styled-table {
+  border-collapse: collapse;
+  margin-top: 15%;
+  margin-left: 5%; 
+  
+  font-size: 0.9em;
+  font-family: sans-serif;
+  max-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
   background-color: #1f1f1f;
+  color: #ffffff;
+  text-align: left;
 }
 
-
-
-table,
-td {
-    border: 1px solid #333;
+.styled-table th, .styled-table td {
+  padding: 12px 15px;
 }
 
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
 }
 
+.styled-table td, th {
+  text-align: center;
+  width: 100vw;
+}
 
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #1f1f1f;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight : bold;
+  color: #ffb900;
+}
+
+#wiki{
+  float: right;
+  margin: 15%;
+  
+  text-align: center;
+  font-size: 35px;
+  font-family: 'helvetica';
+  background-color: #1f1f1f;
+  padding-bottom: 15px;
+  color: #ffb900;
+  transition: all 0.5s ease-in-out;
+}
+#wiki img{
+  max-height: 250px;
+  max-width: 350px;
+  border: #1f1f1f solid 5px;
+}
+#wiki:hover{
+  transform: scale(1.1);
+}
 /* Le Loader */
-.loader_text{
+
+.loader_text {
   position: absolute;
   padding-top: 150px;
   font-family: Helvetica, sans-serif;
 }
 
-.loader-wrapper  {
+.loader-wrapper {
   width: 100%;
   height: 100%;
   position: fixed;
@@ -125,8 +204,8 @@ tfoot {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: rgba(31, 31, 31, 1); 
-   display: flex;
+  background-color: rgba(31, 31, 31, 1);
+  display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1024;
@@ -140,6 +219,7 @@ tfoot {
   border: 4px solid #f5cf09;
   animation: loader 2s infinite ease;
 }
+
 .loader-inner {
   vertical-align: top;
   display: inline-block;
@@ -147,10 +227,11 @@ tfoot {
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
 }
-.loader_text{
+
+.loader_text {
   color: white;
-  
 }
+
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -168,6 +249,7 @@ tfoot {
     transform: rotate(360deg);
   }
 }
+
 @keyframes loader-inner {
   0% {
     height: 0%;

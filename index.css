@@ -88,16 +88,6 @@ span {
 }
 
 
-/* Le Footer */
-#footerdiv{
-  background-color: #1f1f1f;
-  height: 11vh;
-  z-index: 5;
-  text-align: center;
-  
-}
-
-
 
 
 /* Le Loader */
