@@ -128,7 +128,9 @@ a {
   font-family: "bebas";
   transform: scale(1.2, 1);
 }
-
+#secondPage{
+  height: 800px;
+}
 #secondPagecontent {
   display: flex;
   justify-content: space-evenly;
@@ -160,6 +162,9 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+  #secondPage , #fourthPage{
+    height: 100%;
+  }
   #secondPagecontent {
     display: inherit;
     text-align: center;
@@ -178,6 +183,9 @@ a {
   }
 }
 
+#fourthPage{
+  height: 800px;
+}
 #fourthPageContent {
   display: flex;
   justify-content: space-evenly;

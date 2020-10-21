@@ -12,7 +12,7 @@
   text-decoration: none;
 }
 a{
-  color:#ffb900;
+  color:#f3f3f3;
 }
 /* Set du fond d'écran */
 
@@ -89,7 +89,7 @@ section {
 
 #secondPage {
   height: 580px;
-  background-color: black;
+  background-color: #1f1f1f;
 }
 
 #owl-carousel-video {
@@ -113,14 +113,14 @@ section {
 }
 
 #fourthPage {
-  background-color: #dddddd;
+  background-color: #1f1f1f;
   margin-top: -25px;
   border-top: #1f1f1f 5px solid;
   min-height: 1000px;
 }
 
 .owl-dots {
-  background-color: black;
+  background-color: #1f1f1f;
 }
 
 /* Tableau */
@@ -137,7 +137,7 @@ section {
 }
 
 .styled-table thead tr {
-  background-color: #1f1f1f;
+  background-color: #ffb900;
   color: #ffffff;
   text-align: left;
 }
@@ -160,30 +160,38 @@ section {
 }
 
 .styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #1f1f1f;
+  border-bottom: 2px solid #f3f3f3;
 }
 
 .styled-table tbody tr.active-row {
   font-weight : bold;
   color: #ffb900;
 }
+tr{
+  background-color: #dddddd;
+}
 
 #wiki{
   float: right;
   margin: 15%;
-  
   text-align: center;
   font-size: 35px;
   font-family: 'helvetica';
   background-color: #1f1f1f;
   padding-bottom: 15px;
-  color: #ffb900;
+  color: #f3f3f3;
   transition: all 0.5s ease-in-out;
+
 }
 #wiki img{
   max-height: 250px;
   max-width: 350px;
-  border: #1f1f1f solid 5px;
+  border: #f3f3f3 solid 5px;
+
+}
+#wiki h1{
+  border: #ffb900 solid 5px;
+
 }
 #wiki:hover{
   transform: scale(1.1);
