@@ -113,13 +113,14 @@ section {
 }
 
 #fourthPage {
-  background-color: #1f1f1f;
+  background-color: #f3f3f3;
   margin-top: -25px;
   border-top: #1f1f1f 5px solid;
-  min-height: 1000px;
+  height: 700px;
 }
 
-.owl-dots {
+
+.owl-dot {
   background-color: #1f1f1f;
 }
 
@@ -127,19 +128,17 @@ section {
 
 .styled-table {
   border-collapse: collapse;
-  margin-top: 15%;
-  margin-left: 5%; 
-  
   font-size: 0.9em;
   font-family: sans-serif;
-  max-width: 600px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+  margin: auto;
 }
 
 .styled-table thead tr {
-  background-color: #ffb900;
-  color: #ffffff;
+  background-color: #f3f3f3;
+  color: #1f1f1f;
   text-align: left;
+  font-size: 20px;
 }
 
 .styled-table th, .styled-table td {
@@ -147,7 +146,9 @@ section {
 }
 
 .styled-table tbody tr {
-  border-bottom: 1px solid #dddddd;
+  border-top: 1px solid #1f1f1f;
+  border-bottom: 1px solid #1f1f1f;
+
 }
 
 .styled-table td, th {
@@ -155,22 +156,37 @@ section {
   width: 100vw;
 }
 
-.styled-table tbody tr:nth-of-type(even) {
+
+tr{
   background-color: #f3f3f3;
 }
-
-.styled-table tbody tr:last-of-type {
-  border-bottom: 2px solid #f3f3f3;
+#saison1{
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 15%;
+  
+  
+}
+#saison1 h1{
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-bottom: 5%;
+  text-decoration: underline;
 }
 
-.styled-table tbody tr.active-row {
-  font-weight : bold;
-  color: #ffb900;
+#fithPage{
+  height: 1000px;
+  background-image: url("Images/Page4/backgroundlieux.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-tr{
-  background-color: #dddddd;
+#sixPage{
+  background-color: blue;
 }
-
+/* 
 #wiki{
   float: right;
   margin: 15%;
@@ -195,7 +211,7 @@ tr{
 }
 #wiki:hover{
   transform: scale(1.1);
-}
+} */
 /* Le Loader */
 
 .loader_text {
