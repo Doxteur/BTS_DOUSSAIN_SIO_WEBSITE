@@ -75,9 +75,10 @@ header {
   outline: none;
 }
 #buttons {
-  padding:10%;
- 
-  float: right;
+  position: absolute;
+  right: 15px;
+  padding: 10% 10% ;
+
 }
 
 button {
@@ -166,19 +167,41 @@ hr {
 #quotePersonnage span {
   color: #f5cf09;
 }
-
-
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1670px) {
+  #inner_Content{
+    max-width: 1000px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1470px) {
+  #inner_Content{
+    max-width: 900px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1280px) {
   #footerdiv{
     display: none;
       
   }
-  button{
-    display: inline;
+  #inner_Content{
+    width: 700px;
+    
   }
+   
+  #buttons{
+    margin-top: 200px;
+  }
+  
+  
 
 }
-
+@media screen and (max-width: 1024px) {
+  #buttons{
+    margin-top: 600px;
+    
+  }
+}
 /* Le Loader */
 .loader-wrapper {
   width: 100%;
