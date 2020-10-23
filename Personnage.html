@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="footer.css">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
 
     <title>Personnage</title>
     <link rel="stylesheet" href="personnage.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="author" content="Jimmy Doussain">
 
 </head>
 
@@ -24,7 +26,7 @@
                         <a href="Story.html">Histoire</a>
                     </li>
                     <li>
-                        <a href="personnage.html"> <span>Acteur</span></a>
+                        <a href="personnage.html"> <span>Personnage</span></a>
                     </li>
                     <li>
                         <a href="Episodes.html">Episodes</a>
@@ -34,7 +36,7 @@
         </div>
     </header>
 
-
+<!-- Ce qui va se trouver dans la page -->
     <div id="content">
         <div id="inner_Content">
 
@@ -66,16 +68,17 @@
 
 
     <script>
+        //Le script a été developpé par moi
         $(document).ready(function () {
            
                 $("#buttonWalter").addClass("Active"); 
            
         });
-        // Apelle la fonction quand le bouton est cliqué
+        // Appelle la fonction quand le bouton est cliqué
         $("#buttonWalter").click(function () {
             removeClass(); //Appelle de la fonction 
 
-            $("#buttonWalter").addClass("Active"); // Permet de rendre le bouton jaune en lui attibuant la class
+            $("#buttonWalter").addClass("Active"); // Permet de rendre le bouton jaune en lui attibuant la class active
 
             $("h1 , p , #nomActeur,#quotePersonnage ,#portrait").fadeOut(400, function () { // Permet un effet de disparition
                 // Permet de changer les  text  et l'image avec un effet de apparition
@@ -148,7 +151,7 @@
 
             });
         });
-        // Pag Saul 
+        // Page Saul 
         $("#buttonSaul").click(function () {
             removeClass();
 

@@ -14,11 +14,8 @@
 /* Set du fond d'écran */
 body {
   background-color: #1f1f1f;
+}
 
-}
-#content{
-  height: 100vh;
-}
 /*Taille du header et des liens */
 header {
   width: 100%; /*Gestion de la taille du header*/
@@ -78,24 +75,22 @@ header {
   outline: none;
 }
 #buttons {
-  padding-top: 10vw;
+  padding:10%;
  
+  float: right;
 }
-#buttons button {
-  position: relative;
-  top: -1.5vw;
-}
+
 button {
   border: none;
   background: none;
   color: white;
-  font-size: 1.5vw;
+  font-size: 29px;
   display: flex;
-  margin-top: 2vw;
+  margin-top: 38.4px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-align: left;
-  padding: 0.2vw 2vw 0.2vw 2vw;
+  padding: 3.84px 38.4px 3.84px 38.4px;
  
 }
 button:hover {
@@ -108,69 +103,81 @@ button:focus:hover {
 }
 hr {
   float: left;
-  margin-top: -8vw;
+  margin-top: -153.6px;
   border: none;
   background-color: #f5cf09;
-  height: 40vw;
-  width: 0.2vw;
+  height: 768px;
+  width: 2.18px;
 }
 #content {
   position: relative;
+  height: 1000px;
+
 }
 #inner_Content {
-  width: 65vw;
-  margin-right: 2vw;
-  margin-top: 12vw;
-  margin-left: 2vw;
+  max-width: 1248px;
+  margin-right: 38.4px;
+  margin-top: 230.4px;
+  margin-left: 38.4px;
   float: left;
 }
 
 #inner_Content img {
-  width: 13.4vw;
-  height: 18.3;
+  max-width: 257.28px;
+  height: 351.36px;
   float: left;
-  margin-left: 1.5vw;
+  margin-left: 28.8px;
   border: solid 2px #f5cf09;
   box-shadow: 5px 10px 5px black;
 }
 #textContent {
-  margin-left: 20vw;
+  margin-left: 384px;
 }
 #nomPersonnage {
   margin-top: -5vw;
   font-family: Arial;
   font-weight: bold;
   color: #ffd600;
-  font-size: 5vw;
+  font-size: 96px;
 }
 #nomActeur {
-  margin-bottom: 2vw;
+  margin-bottom: 38.4px;
   margin-left: 20px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1vw;
+  font-size: 19.2px;
 }
 #nomActeur span {
   color: #f5cf09;
 }
 #textPersonnage {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5vw;
-  width: 40vw;
+  font-size: 28.8px;
+  max-width: 768px;
   color: white;
 }
 #quotePersonnage {
-  margin-top: 4vw;
+  margin-top: 76.8px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 2vw;
-  margin-left: 1vw;
+  font-size: 38.4px;
+  margin-left: 19.2px;
 }
 #quotePersonnage span {
   color: #f5cf09;
 }
 
 
+@media screen and (max-width: 1170px) {
+  #footerdiv{
+    display: none;
+      
+  }
+  button{
+    display: inline;
+  }
+
+}
 
 /* Le Loader */
 .loader-wrapper {
