@@ -184,7 +184,40 @@ tr{
   background-attachment: fixed;
 }
 #sixPage{
-  background-color: blue;
+  background-color: #1f1f1f;
+  display: table;
+  height: 900px;
+}
+
+#lieux{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#lieux h1{
+  font-size: 8em;
+  color: #ffb900;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  margin-bottom: 35px;
+
+}
+#lieux p{
+  color: white;
+  font-family: 'Arial';
+  font-size: 2em;
+  width: 850px;
+  margin: auto;
+  margin-bottom: 35px;
+}
+#lieux h2{
+  background-color: #ffb900;
+  width: 200px;
+  margin-top: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  padding: 15px;
+  margin: auto;
 }
 /* 
 #wiki{
